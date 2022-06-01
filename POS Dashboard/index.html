@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Next Step POS</title>
+  <link rel="icon" href="images/logo green.png" type="image/png" />
+  <link rel="stylesheet" href="cryptocurrency-html/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="cryptocurrency-html/vendors/themefy_icon/themify-icons.css" />
+  <link rel="stylesheet" href="cryptocurrency-html/vendors/niceselect/css/nice-select.css" />
+  <link rel="stylesheet" href="cryptocurrency-html/vendors/owl_carousel/css/owl.carousel.css" />
+  <link rel="stylesheet" href="cryptocurrency-html/vendors/gijgo/gijgo.min.css" />
+  <link rel="stylesheet" href="cryptocurrency-html/vendors/font_awesome/css/all.min.css" />
+  <link rel="stylesheet" href="cryptocurrency-html/vendors/tagsinput/tagsinput.css" />
+  <link rel="stylesheet" href="cryptocurrency-html/vendors/datepicker/date-picker.css" />
+  <link rel="stylesheet" href="cryptocurrency-html/vendors/vectormap-home/vectormap-2.0.2.css" />
+  <link rel="stylesheet" href="cryptocurrency-html/vendors/scroll/scrollable.css" />
+  <link rel="stylesheet" href="cryptocurrency-html/vendors/datatable/css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" href="cryptocurrency-html/vendors/datatable/css/responsive.dataTables.min.css" />
+  <link rel="stylesheet" href="cryptocurrency-html/vendors/datatable/css/buttons.dataTables.min.css" />
+  <link rel="stylesheet" href="cryptocurrency-html/vendors/text_editor/summernote-bs4.css" />
+  <link rel="stylesheet" href="cryptocurrency-html/vendors/morris/morris.css" />
+  <link rel="stylesheet" href="cryptocurrency-html/vendors/material_icon/material-icons.css" />
+  <link rel="stylesheet" href="cryptocurrency-html/css/metisMenu.css" />
+  <link rel="stylesheet" href="cryptocurrency-html/css/style.css" />
+  <link rel="stylesheet" href="css/colors/default.css" id="colorSkinCSS" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="crm_body_bg">
+  <nav class="sidebar card py- mb-4">
+    <div class="logo d-flex justify-content-between">
+      <a class="large_logo" href="index.html"><img src="images/logo green.png" alt="" /></a>
+      <a class="small_logo" href="index.html"><img src="cryptocurrency-html/img/mini_logo.png" alt="" /></a>
+      <div class="sidebar_close_icon d-lg-none">
+        <i class="ti-close"></i>
+      </div>
+    </div>
+
+    <ul class="nav flex-column" id="nav_accordion">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+          <div class="nav_icon_small"> <span>Dashboard</span>
+            <img class="dashboard" src="images/icons8_home_3.png" alt="" />
+          </div>
+        </a>
+      </li>
+      <li class="nav-item has-submenu">
+        <a class="nav-link" href="#">
+          <div class="nav_icon_small">
+            <img src="images/icons8_box_3.png" alt="" />
+            <span>Products </span>
+          </div>
+        </a>
+        <ul class="submenu collapse">
+          <li><a class="nav-link" href="product-dashboard.html">Add Products </a></li>
+        </ul>
+      </li>
+      <li class="nav-item has-submenu">
+        <a class="nav-link" href="#">
+          <div class="nav_icon_small">
+            <img src="images/icons8_loyalty_card.png" alt="" />
+            <span>Sales </span><i class="fa fa-sort-desc" aria-hidden="true"></i>
+          </div>
+        </a>
+        <ul class="submenu collapse">
+          <li><a class="nav-link" href="Sales-Product.html">Add Sales </a></li>
+        </ul>
+      </li>
+      <li class="nav-item has-submenu">
+        <a class="nav-link" href="#">
+          <div class="nav_icon_small">
+            <img src="images/icons8_return_purchase.png" alt="" />
+            <span>Pruchases </span>
+          </div>
+        </a>
+        <ul class="submenu collapse">
+          <li><a class="nav-link" href="dashboard-purchases.html">Add Purchases </a></li>
+        </ul>
+      </li>
+      <li class="nav-item has-submenu">
+        <a class="nav-link" href="#">
+          <div class="nav_icon_small">
+            <img src="images/icons8_user_male_circle_2.png" alt="" />
+            <span>Customers </span>
+          </div>
+        </a>
+        <ul class="submenu collapse">
+          <li><a class="nav-link" href="add-cutomers.html">Add Customers </a></li>
+        </ul>
+      </li>
+      <li class="nav-item has-submenu">
+        <a class="nav-link" href="#">
+          <div class="nav_icon_small">
+            <img src="images/icons8_supplier_1.png" alt="" />
+            <span>Suppliers </span>
+          </div>
+        </a>
+        <ul class="submenu collapse">
+          <li><a class="nav-link" href="#">Link one </a></li>
+        </ul>
+      </li>
+      <li class="nav-item has-submenu">
+        <a class="nav-link" href="#">
+          <div class="nav_icon_small">
+            <img src="images/icons8_combo_chart_1.png" alt="" />
+            <span>Categories </span>
+          </div>
+        </a>
+        <ul class="submenu collapse">
+          <li><a class="nav-link" href="categories-product.html">Add Categories </a></li>
+        </ul>
+      </li>
+      <li class="nav-item has-submenu">
+        <a class="nav-link" href="#">
+          <div class="nav_icon_small">
+            <img src="images/icons8_branding_4.png" alt="" />
+            <span>Brands </span>
+          </div>
+        </a>
+        <ul class="submenu collapse">
+          <li><a class="nav-link" href="dashboard brand.html">Generate Bar-Code </a></li>
+        </ul>
+      </li>
+      <li class="nav-item has-submenu">
+        <a class="nav-link" href="#">
+          <div class="nav_icon_small">
+            <img src="images/icons8_reservation_2.png" alt="" />
+            <span>Expenses </span>
+          </div>
+        </a>
+        <ul class="submenu collapse">
+          <li><a class="nav-link" href="#">Link one </a></li>
+        </ul>
+      </li>
+      <li class="nav-item has-submenu">
+        <a class="nav-link" href="#">
+          <div class="nav_icon_small">
+            <img src="images/icons8_user_male_circle_2.png" alt="" />
+            <span>People </span>
+          </div>
+        </a>
+        <ul class="submenu collapse">
+          <li><a class="nav-link" href="#">Link one </a></li>
+        </ul>
+      </li>
+      <li class="nav-item has-submenu">
+        <a class="nav-link" href="#">
+          <div class="nav_icon_small">
+            <img src="images/icons8_combo_chart_1.png" alt="" />
+            <span>Reports </span>
+          </div>
+        </a>
+        <ul class="submenu collapse">
+          <li><a class="nav-link" href="User-report.html">Add Report </a></li>
+        </ul>
+      </li>
+      <li class="nav-item has-submenu">
+        <a class="nav-link" href="#">
+          <div class="nav_icon_small">
+            <img src="images/icons8_settings_3 copy 2.png" alt="" />
+            <span>Settings </span>
+          </div>
+        </a>
+        <ul class="submenu collapse">
+          <li><a class="nav-link" href="Setting.html">Check Setting </a></li>
+        </ul>
+      </li>
+
+    </ul>
+
+
+
+  </nav>
+  <section class="main_content dashboard_part large_header_bg">
+    <div class="container-fluid no-gutters">
+      <div class="row">
+        <div class="col-lg-12 p-0">
+          <div class="header_iner d-flex justify-content-between align-items-center">
+            <div class="sidebar_icon d-lg-none">
+              <i class="ti-menu"></i>
+            </div>
+            <div class="line_icon open_miniSide d-none d-lg-block">
+              <img src="cryptocurrency-html/img/line_img.png" alt="" />
+            </div>
+            <div <div class="pl-2 d-flex mr-auto ml-5">
+              <img class="lgout" src="images/icons8_search_4.png" alt="" />
+              <p class="ml-4">Search Projects</p>
+            </div>
+            <div class="header_right d-flex justify-content-between align-items-center">
+              <div class="header_notification_warp d-flex align-items-center">
+                <li>
+                  <a class="CHATBOX_open" href="#">
+                    <img class="lgout" src="images/icons8_logout_rounded_up.png" alt="" />
+                  </a>
+                </li>
+
+                <li>
+                  <a class="CHATBOX_open" href="#">
+                    <img class="lgout" src="images/icons8_message_10.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <img class="lgout" src="images/icons8_alarm_1.png" alt="" />
+                  </a>
+                </li>
+              </div>
+              <div class="profile_info d-flex align-items-center">
+                <div class="profile_thumb mr_20">
+                  <img src="images/imran-abbas-20140717101104-33263.jpg" alt="#" />
+                </div>
+                <div class="author_name">
+                  <h4 class="f_s_15 f_w_500 mb-0">Ashfaque</h4>
+                </div>
+                <div class="profile_info_iner">
+                  <div class="profile_author_name">
+                    <h5>Ashfaque</h5>
+                  </div>
+                  <div class="profile_info_details">
+                    <a href="#">My Profile </a>
+                    <a href="#">Settings</a>
+                    <a href="#">Log Out </a>
+                    <a class="srch d-flex" href="#"> <img src="images/icons8_search_4.png" alt="" />Search
+                      Projects</a>
+                    <a class="srch d-flex" href="#"><img src="dashboardimgs/icons8_message_10.png" alt="">Message
+                      Us</a>
+                    <a class="srch d-flex" href="#"><img src="dashboardimgs/icons8_logout_rounded_up.png"
+                        alt="">Logout</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- main portion -->
+
+
+    <div class="row">
+      <div class="col-md-6 offset-md-4 d-flex pc">
+        <img src="dashboardimgs/download.png" alt="">
+        <p>PC World Multan</p>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="container itemone ">
+      <div class="row ">
+        <div class="col item-1">
+          <div class="itemproduct-1 d-flex">
+            <img src="dashboardimgs/Group 50.png" alt="">
+            <h6>Products</h6>
+          </div>
+          <div class="itemproduct2">
+            <h4>15,000</h4>
+          </div>
+        </div>
+        <div class="col item-2">
+          <div class="itemsale-1 d-flex">
+            <img src="dashboardimgs/sales.png" alt="">
+            <h6>Sale</h6>
+          </div>
+          <div class="itemsale2">
+            <h4>15,000</h4>
+          </div>
+        </div>
+        <div class="col item-2">
+          <div class="itempurchase-1 d-flex">
+            <img src="dashboardimgs/Group 51.png" alt="">
+            <h6>Purchases</h6>
+          </div>
+          <div class="itempurchase2">
+            <h4>15,000</h4>
+          </div>
+        </div>
+        <div class="col item-4">
+          <div class="itemcustomers-1 d-flex">
+            <img src="dashboardimgs/Group 56.png" alt="">
+            <h6>Customers</h6>
+          </div>
+          <div class="itemcustomers2">
+            <h4>15,000</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container itemtwo ">
+      <div class="row ">
+        <div class="col item-3">
+          <div class="itemsupplier-1 d-flex">
+            <img src="dashboardimgs/Group 52.png" alt="">
+            <h6>Suppliers</h6>
+          </div>
+          <div class="itemsupplier2">
+            <h4>15,000</h4>
+          </div>
+        </div>
+        <div class="col item-3">
+          <div class="itemexpenses-1 d-flex">
+            <img src="dashboardimgs/Group 54.png" alt="">
+            <h6>Expenses</h6>
+          </div>
+          <div class="iteexpenses2">
+            <h4>15,000</h4>
+          </div>
+        </div>
+        <div class="col item-3">
+          <div class="itemcategories-1 d-flex">
+            <img src="dashboardimgs/Group 53.png" alt="">
+            <h6>Categories</h6>
+          </div>
+          <div class="itemcategories2">
+            <h4>15,000</h4>
+          </div>
+        </div>
+        <div class="col item-5">
+          <div class="itembrands-1 d-flex">
+            <img src="dashboardimgs/Group 55.png" alt="">
+            <h6>Brands</h6>
+          </div>
+          <div class="itembrands2">
+            <h4>15,000</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container maps">
+      <div class="row d-flex flex-wrap">
+        <div class="col-6 img-fluid map-1"><img src="dashboardimgs/barchart.PNG" alt=""></div>
+        <div class="col-6  img-fluid map-2"><img src="dashboardimgs/piechart.PNG" alt=""></div>
+      </div>
+    </div>
+
+
+
+    <div class="container product-selling">
+      <h4>Top 10 Selling Products</h4>
+      <div class="row">
+        <div class="col d-flex sultan">
+          <img src="dashboardimgs/Layer 3.png" alt="">
+          <h6>Sultan Banaspati 5 Kg Pack</h6>
+
+        </div>
+        <div class="col d-flex sultan">
+          <img src="dashboardimgs/Layer 3.png" alt="">
+          <h6>Sultan Banaspati 5 Kg Pack</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex sultan">
+          <img src="dashboardimgs/Layer 3.png" alt="">
+          <h6>Sunsilk Shampoo 250ml</h6>
+
+        </div>
+        <div class="col d-flex sultan">
+          <img src="dashboardimgs/Layer 3.png" alt="">
+          <h6>Sunsilk Shampoo 250ml</h6>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col d-flex sultan">
+          <img src="dashboardimgs/Layer 3.png" alt="">
+          <h6>Safeguard Handwash Soap</h6>
+
+        </div>
+        <div class="col d-flex sultan">
+          <img src="dashboardimgs/Layer 3.png" alt="">
+          <h6>Safeguard Handwash Soap</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex sultan">
+          <img src="dashboardimgs/Layer 3.png" alt="">
+          <h6>Quershi Jam-e-Shirin 900 ml</h6>
+
+        </div>
+        <div class="col d-flex sultan">
+          <img src="dashboardimgs/Layer 3.png" alt="">
+          <h6>Quershi Jam-e-Shirin 900 ml</h6>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col d-flex sultan">
+          <img src="dashboardimgs/Layer 3.png" alt="">
+          <h6>Surf Excel 900 grams</h6>
+
+        </div>
+        <div class="col d-flex sultan">
+          <img src="dashboardimgs/Layer 3.png" alt="">
+          <h6>Surf Excel 900 grams</h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container customers">
+      <div class="container">
+        <h4>Top 5 Customers</h4>
+        <div class="row">
+          <div class="col-md-4 d-flex zhd"><img src="dashboardimgs/icons8_user_male_circle_filled copy 5.png" alt="">
+            <h6>Zahid Khan</h6>
+          </div>
+          <div class="col-md-4 offset-md-4 d-flex zhd"><img
+              src="dashboardimgs/icons8_user_male_circle_filled copy 5.png" alt="">
+            <h6>Zahid Khan</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 d-flex zhd"><img src="dashboardimgs/icons8_user_male_circle_filled copy 5.png" alt="">
+            <h6>Sultan Khan</h6>
+          </div>
+          <div class="col-md-4 offset-md-4 d-flex zhd"><img
+              src="dashboardimgs/icons8_user_male_circle_filled copy 5.png" alt="">
+            <h6>Sultan Khan</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 d-flex zhd"><img src="dashboardimgs/icons8_user_male_circle_filled copy 5.png" alt="">
+            <h6>Ramaz Ali</h6>
+          </div>
+          <div class="col-md-4 offset-md-4 d-flex zhd"><img
+              src="dashboardimgs/icons8_user_male_circle_filled copy 5.png" alt="">
+            <h6>Ramaz Ali</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 d-flex zhd"><img src="dashboardimgs/icons8_user_male_circle_filled copy 5.png" alt="">
+            <h6>Awais Gujjar</h6>
+          </div>
+          <div class="col-md-4 offset-md-4 d-flex zhd"><img
+              src="dashboardimgs/icons8_user_male_circle_filled copy 5.png" alt="">
+            <h6>Awais Gujjar</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 d-flex zhd"><img src="dashboardimgs/icons8_user_male_circle_filled copy 5.png" alt="">
+            <h6>Ashfaque</h6>
+          </div>
+          <div class="col-md-4 offset-md-4 d-flex zhd"><img
+              src="dashboardimgs/icons8_user_male_circle_filled copy 5.png" alt="">
+            <h6>Ashfaque</h6>
+          </div>
+        </div>
+      </div>
+
+
+      <script>
+        function openNav() {
+          document.getElementByElement("sidebar_menu").style.width = "250px";
+          document.getElementByClass("main_content").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("nav_title").style.width = "0";
+          document.getElementById("main_content").style.marginLeft = "0";
+        }
+      </script>
+
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          document.querySelectorAll('.sidebar .nav-link').forEach(function (element) {
+
+            element.addEventListener('click', function (e) {
+
+              let nextEl = element.nextElementSibling;
+              let parentEl = element.parentElement;
+
+              if (nextEl) {
+                e.preventDefault();
+                let mycollapse = new bootstrap.Collapse(nextEl);
+
+                if (nextEl.classList.contains('show')) {
+                  mycollapse.hide();
+                } else {
+                  mycollapse.show();
+                  // find other submenus with class=show
+                  var opened_submenu = parentEl.parentElement.querySelector('.submenu.show');
+                  // if it exists, then close all of them
+                  if (opened_submenu) {
+                    new bootstrap.Collapse(opened_submenu);
+                  }
+                }
+              }
+            }); // addEventListener
+          }) // forEach
+        }); 
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+      <script src="cryptocurrency-html/js/jquery-3.4.1.min.js"></script>
+      <script src="cryptocurrency-html/js/popper.min.js"></script>
+      <script src="cryptocurrency-html/js/bootstrap.min.js"></script>
+      <script src="cryptocurrency-html/js/metisMenu.js"></script>
+      <script src="cryptocurrency-html/vendors/count_up/jquery.waypoints.min.js"></script>
+      <script src="cryptocurrency-html/vendors/chartlist/Chart.min.js"></script>
+      <script src="cryptocurrency-html/vendors/count_up/jquery.counterup.min.js"></script>
+      <script src="cryptocurrency-html/vendors/niceselect/js/jquery.nice-select.min.js"></script>
+      <script src="cryptocurrency-html/vendors/owl_carousel/js/owl.carousel.min.js"></script>
+      <script src="cryptocurrency-html/vendors/datatable/js/jquery.dataTables.min.js"></script>
+      <script src="cryptocurrency-html/vendors/datatable/js/dataTables.responsive.min.js"></script>
+      <script src="cryptocurrency-html/vendors/datatable/js/dataTables.buttons.min.js"></script>
+      <script src="cryptocurrency-html/vendors/datatable/js/buttons.flash.min.js"></script>
+      <script src="cryptocurrency-html/vendors/datatable/js/jszip.min.js"></script>
+      <script src="cryptocurrency-html/vendors/datatable/js/pdfmake.min.js"></script>
+      <script src="cryptocurrency-html/vendors/datatable/js/vfs_fonts.js"></script>
+      <script src="cryptocurrency-html/vendors/datatable/js/buttons_html5.min.js"></script>
+      <script src="cryptocurrency-html/vendors/datatable/js/buttons.print.min.js"></script>
+      <script src="cryptocurrency-html/vendors/datepicker/datepicker.js"></script>
+      <script src="cryptocurrency-html/vendors/datepicker/datepicker.en.js"></script>
+      <script src="cryptocurrency-html/vendors/datepicker/datepicker.custom.js"></script>
+      <script src="cryptocurrency-html/js/chart.min.js"></script>
+      <script src="cryptocurrency-html/vendors/chartjs/roundedBar.min.js"></script>
+      <script src="cryptocurrency-html/vendors/progressbar/jquery.barfiller.js"></script>
+      <script src="cryptocurrency-html/vendors/tagsinput/tagsinput.js"></script>
+      <script src="cryptocurrency-html/vendors/text_editor/summernote-bs4.js"></script>
+      <script src="cryptocurrency-html/vendors/am_chart/amcharts.js"></script>
+      <script src="cryptocurrency-html/vendors/scroll/perfect-scrollbar.min.js"></script>
+      <script src="cryptocurrency-html/vendors/scroll/scrollable-custom.js"></script>
+      <script src="cryptocurrency-html/vendors/vectormap-home/vectormap-2.0.2.min.js"></script>
+      <script src="cryptocurrency-html/vendors/vectormap-home/vectormap-world-mill-en.js"></script>
+      <script src="cryptocurrency-html/vendors/apex_chart/apex-chart2.js"></script>
+      <script src="vendors/apex_chart/apex_dashboard.js"></script>
+      <script src="cryptocurrency-html/vendors/chart_am/core.js"></script>
+      <script src="cryptocurrency-html/vendors/chart_am/charts.js"></script>
+      <script src="cryptocurrency-html/vendors/chart_am/animated.js"></script>
+      <script src="cryptocurrency-html/vendors/chart_am/kelly.js"></script>
+      <script src="cryptocurrency-html/vendors/chart_am/chart-custom.js"></script>
+      <script src="cryptocurrency-html/js/dashboard_init.js"></script>
+      <script src="cryptocurrency-html/js/custom.js"></script>
+</body>
+
+</html>
